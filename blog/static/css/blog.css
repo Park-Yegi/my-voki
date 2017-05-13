@@ -26,8 +26,10 @@ body {
 }
 
 .page-header {
-    background-color: #25F6BD;
-    margin-top: 0;
+    background: -webkit-linear-gradient(-45deg, #46124f 0%,#960482 36%,#518be8 100%);
+    /* -webkit-linear-gradient(top, #aa318a 1%,#a759d1 40%,#2989d8 97%); /* Chrome10-25,Safari5.1-6 */
+    /*background: filter=progid:DXImageTransform.Microsoft.Gradient(GradientType=1, StartColorStr=#f09ce0 , EndColorStr=#ffeda3 );
+    */margin-top: 0;
     padding: 20px 20px 20px 40px;
 }
 

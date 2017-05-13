@@ -7,9 +7,14 @@
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
         <link rel="stylesheet" href="{% static 'css/blog.css' %}">
         <link href="http://fonts.googleapis.com/s" rel="stylesheet" type="text/css">
+
+        <style>
+            #title_back {filter=progid:DXImageTransform.Microsoft.Gradient(GradientType=1, StartColorStr=#f09ce0 , EndColorStr=#ffeda3 );}
+        </style>
     </head>
     <body>
         <div class="page-header">
+            <div id="title_back"></div>
             <a href="{% url 'post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
 
             <h1><a href="/">Voice of Kaist</a></h1>
