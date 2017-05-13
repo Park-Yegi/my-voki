@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/earlyaccess/nanumgothic.css');
+@import url('https://fonts.googleapis.com/css?family=Ubuntu');
+@import url('https://fonts.googleapis.com/css?family=Baloo');
+
 h1 a {
     color: #FCA205;
     font-family: 'Baloo';
@@ -7,8 +11,17 @@ body {
         padding-left: 15px;
 }
 
+.dropdown-title {
+    color: #5E5E5E;
+    font-family: 'Ubuntu';
+}
+
+.dropdown-menu {
+    font-family: 'Nanum Gothic';
+}
+
 .page-header {
-    background-color: #ff9400;
+    background-color: #25F6BD;
     margin-top: 0;
     padding: 20px 20px 20px 40px;
 }
