@@ -15,7 +15,7 @@ def post_detail(request, pk):
 
 def post_new(request):
     if request.method == "POST":
-        form = PostForm(request.POST)
+        form = PostForm(request.POST, request.FILES)
         if form.is_valid():
             post = form.save(commit=False)
             post.author = request.user
@@ -44,10 +44,12 @@ def otherevent(request):
     return render(request, 'blog/otherevent.html')
 
 def notice(request):
-    return render(request, 'blog/notice.html')
+    posts = Post.objects.filter(published_date__lte=timezone.now(), type='notice').order_by('published_date')
+    return render(request, 'blog/notice.html', {'posts': posts})
 
 def freeboard(request):
-    return render(request, 'blog/freeboard.html')
+    posts = Post.objects.filter(published_date__lte=timezone.now(), type='freeboard').order_by('published_date')
+    return render(request, 'blog/freeboard.html', {'posts': posts})
 
 def sinbang(request):
     return render(request, 'blog/sinbang.html')
@@ -90,3 +92,5 @@ def memberintro(request):
 
 def contact(request):
     return render(request, 'blog/contact.html')
+
+
