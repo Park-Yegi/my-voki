@@ -40,5 +40,53 @@ def post_edit(request, pk):
         form = PostForm(instance=post)
     return render(request, 'blog/post_edit.html', {'form': form})
 
-def event(request):
+def otherevent(request):
     return render(request, 'blog/otherevent.html')
+
+def notice(request):
+    return render(request, 'blog/notice.html')
+
+def freeboard(request):
+    return render(request, 'blog/freeboard.html')
+
+def sinbang(request):
+    return render(request, 'blog/sinbang.html')
+
+def gayo(request):
+    return render(request, 'blog/gayo.html')
+
+def kapo(request):
+    return render(request, 'blog/kapo.html')
+
+def timetable(request):
+    return render(request, 'blog/timetable.html')
+
+def streaming(request):
+    return render(request, 'blog/streaming.html')
+
+def listenagain(request):
+    return render(request, 'blog/listenagain.html')
+
+def songrequest(request):
+    return render(request, 'blog/songrequest.html')
+
+def news(request):
+    return render(request, 'blog/news.html')
+
+def drama(request):
+    return render(request, 'blog/drama.html')
+
+def vokintro(request):
+    return render(request, 'blog/vokintro.html')
+
+def hello(request):
+    return render(request, 'blog/hello.html')
+
+def history(request):
+    return render(request, 'blog/history.html')
+
+def memberintro(request):
+    return render(request, 'blog/memberintro.html')
+
+def contact(request):
+    return render(request, 'blog/contact.html')
