@@ -23,4 +23,7 @@ urlpatterns = [
     url(r'^history$', views.history, name='history'),
     url(r'^memberintro$', views.memberintro, name='memberintro'),
     url(r'^contact$', views.contact, name='contact'),
+    url(r'^register$', views.register, name='register'),
+    url(r'^login$', views.login, name='login'),
+    url(r'^post/(?P<pk>\d+)/remove/$', views.post_remove, name='post_remove'),
 ]

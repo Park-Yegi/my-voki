@@ -21,6 +21,7 @@ class Post(models.Model):
     )
 
     document = models.FileField(upload_to='documents/', null=True, blank=True)
+    hits = models.PositiveIntegerField(default=0)
 
     def publish(self):
         self.published_date = timezone.now()
